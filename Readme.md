@@ -5,14 +5,6 @@
 
 
 #### 运行环境
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Unity Editor：2021.3.30f
-=======
 - Unity Editor：2021.3.30f1c1
->>>>>>> 6a500be (添加 YooAsset 和 UniFramework 的引用地址，添加运行环境信息)
-=======
-- Unity Editor：2021.3.30f
->>>>>>> Github/main
 - JetBrains Rider：2023.3.2
 - Visual Studio 2022：17.8 
