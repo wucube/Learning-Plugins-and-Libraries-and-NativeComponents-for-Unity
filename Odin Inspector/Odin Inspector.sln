@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{113088e1-15f1-c3c6-5216-f9363eba88d4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{b37a0143-482e-3b6c-d6a3-47efcecae300}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{5027cf64-7ae7-94b7-6ae7-2b15f6f91bc3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{7f8d4c5b-1f9c-53a5-7d25-d2264d962158}"
@@ -14,6 +16,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{113088e1-15f1-c3c6-5216-f9363eba88d4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{113088e1-15f1-c3c6-5216-f9363eba88d4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b37a0143-482e-3b6c-d6a3-47efcecae300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b37a0143-482e-3b6c-d6a3-47efcecae300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5027cf64-7ae7-94b7-6ae7-2b15f6f91bc3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5027cf64-7ae7-94b7-6ae7-2b15f6f91bc3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7f8d4c5b-1f9c-53a5-7d25-d2264d962158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
