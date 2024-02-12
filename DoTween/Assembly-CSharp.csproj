@@ -295,12 +295,6 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>D:\Unity\2021.3.30f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
-     <Reference Include="ReportGeneratorMerged">
-     <HintPath>E:\CodeProject\Unity\Learning Unity Plugins and Libraries\DoTween\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTween">
-     <HintPath>E:\CodeProject\Unity\Learning Unity Plugins and Libraries\DoTween\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
-     </Reference>
      <Reference Include="Sirenix.Reflection.Editor">
      <HintPath>E:\CodeProject\Unity\Learning Unity Plugins and Libraries\DoTween\Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
      </Reference>
@@ -313,8 +307,14 @@
      <Reference Include="Sirenix.Serialization.Config">
      <HintPath>E:\CodeProject\Unity\Learning Unity Plugins and Libraries\DoTween\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
      </Reference>
+     <Reference Include="DOTween">
+     <HintPath>E:\CodeProject\Unity\Learning Unity Plugins and Libraries\DoTween\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     </Reference>
      <Reference Include="Sirenix.Utilities">
      <HintPath>E:\CodeProject\Unity\Learning Unity Plugins and Libraries\DoTween\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+     </Reference>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>E:\CodeProject\Unity\Learning Unity Plugins and Libraries\DoTween\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Serialization">
      <HintPath>E:\CodeProject\Unity\Learning Unity Plugins and Libraries\DoTween\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
