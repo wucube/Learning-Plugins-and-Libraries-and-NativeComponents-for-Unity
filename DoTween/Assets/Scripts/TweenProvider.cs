@@ -93,5 +93,48 @@ public class TweenProvider : MonoBehaviour
         Debug.Log("动画补间完成");
     }
 
+
+    [Button("立即完成动画")]
+    private void ImmediatelyCompleteAnimation()
+    {
+        _transCube.DOComplete();
+    }
+
+    [Button("移动自身坐标")]
+    private void MoveBySelf()
+    {
+        _transCube.DOLocalMoveX(9, 5);
+    }
+
+    [Button("移动累加")]
+    private void MoveBlend()
+    {
+        _transCube.DOBlendableMoveBy(Vector3.one , 2);
+    }
+
+    [Button("来回移动")]
+    private void MovePunch()
+    {
+        _transCube.DOPunchPosition(new Vector3(5, 0, 0), 2, -1, 1f);
+    }
+
+    [Button("旋转")]
+    private void Rotate()
+    {
+        _transCube.DORotate(new Vector3(0, 90, 0), 3,RotateMode.LocalAxisAdd);
+    }
+
+    [Button("围绕自身坐标轴旋转")]
+    private void LocalRotate()
+    {
+        _transCube.DOLocalRotate(new Vector3(0, 170, 0), 4, RotateMode.WorldAxisAdd);
+    }
+
+    [Button("四元数旋转物体")]
+    private void RotateQua()
+    {
+        _transCube.DORotateQuaternion(Quaternion.Euler(40, 180, 0), 8);
+    }
+
 }
  
