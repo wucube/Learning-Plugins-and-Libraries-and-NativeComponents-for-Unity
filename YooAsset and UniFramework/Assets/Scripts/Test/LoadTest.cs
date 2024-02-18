@@ -30,6 +30,7 @@ public class LoadTest : MonoBehaviour
         yield return _package.InitializeAsync(initParameters);
     }
     
+    
 
     [Button("加载枪械模")]
     private void LoadGun(string modelName)

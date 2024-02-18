@@ -77,11 +77,7 @@
     <Compile Include="Assets\Samples\YooAsset\2.1.1\Space Shooter\ThirdParty\StreamingAssetsHelper\StreamingAssetsDefine.cs" />
     <None Include="Assets\Samples\YooAsset\2.1.1\Space Shooter\AssetSetting\AssetBundleCollectorConfig.xml" />
     <None Include="Assets\Samples\YooAsset\2.1.1\Space Shooter\GameArt\Shader\MyUnlitShader.shader" />
-    <None Include="Assets\StreamingAssets\YooAB\Gun\link.xml" />
     <None Include="Assets\Samples\YooAsset\2.1.1\Space Shooter\GameArt\ShaderVariants\MyShaderVariants.json" />
-    <None Include="Assets\StreamingAssets\YooAB\Gun\PackageManifest_Gun_v0.1.json" />
-    <None Include="Assets\StreamingAssets\YooAB\Gun\buildlogtep.json" />
-    <None Include="Assets\StreamingAssets\YooAB\Gun\BuildReport_Gun_v0.1.json" />
     <None Include="Assets\Samples\YooAsset\2.1.1\Space Shooter\GameArt\Shader\StandardMobile.shader" />
     <None Include="Assets\Samples\YooAsset\2.1.1\Space Shooter\GameArt\Shader\StandardMobile.cginc" />
     <Reference Include="UnityEngine">

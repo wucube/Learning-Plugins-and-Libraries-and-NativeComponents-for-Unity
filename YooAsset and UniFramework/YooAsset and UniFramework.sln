@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniFramework.Reference", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{23a2627d-d04a-bc2f-9036-aa0a369a1078}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{3e0cd3c4-7963-a2cb-944b-381d6c393512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{8dc24366-3c35-b754-b005-c141efb3a79c}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +58,10 @@ Global
 		{bb188a79-e047-7471-a7c5-6b4ed9d71536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23a2627d-d04a-bc2f-9036-aa0a369a1078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23a2627d-d04a-bc2f-9036-aa0a369a1078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3e0cd3c4-7963-a2cb-944b-381d6c393512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3e0cd3c4-7963-a2cb-944b-381d6c393512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8dc24366-3c35-b754-b005-c141efb3a79c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8dc24366-3c35-b754-b005-c141efb3a79c}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
