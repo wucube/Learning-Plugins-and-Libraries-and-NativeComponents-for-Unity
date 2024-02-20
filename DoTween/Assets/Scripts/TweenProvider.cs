@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor.Validation;
+using UnityEngine.UI;
 
 public class TweenProvider : MonoBehaviour
 {
@@ -11,11 +12,15 @@ public class TweenProvider : MonoBehaviour
 
     [SerializeField] private Vector3 _rate;
     [SerializeField] private Vector3 _target;
+    [SerializeField] private Text _text;
+    [SerializeField] private Material _material;
+
+    [SerializeField] private Gradient _gradient;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -136,5 +141,62 @@ public class TweenProvider : MonoBehaviour
         _transCube.DORotateQuaternion(Quaternion.Euler(40, 180, 0), 8);
     }
 
+    [Button("跳跃函数")]
+    private void Jump()
+    {
+        _transCube.DOJump(new Vector3(0, 5, 0), 1, 3, 3).SetEase(Ease.OutBack);
+    }
+
+    [Button("渐变透明度")]
+    private void Fade()
+    {
+        _text.DOFade(0, 2f).SetEase(Ease.OutBack); 
+    }
+
+    
+    [Button("抖动")]
+    private void Shake()
+    {
+        //_transCube.DOShakePosition(1, new Vector3(0.2f, 0.5f, 0), 20, 0f, false);
+        
+        //_transCube.DOShakeRotation(0.3f, new Vector3(10, 30, 0), 15, 0, true);
+
+        _transCube.DOShakeScale(0.5f, 0.3f, 10, 0, true);
+    }
+
+    #region 材质的 Tween 动画
+    [BoxGroup("Material",ShowLabel = false)]
+    [TitleGroup("Material/材质")]
+    [ButtonGroup("Material/材质/方法组01")]
+    private void ChangeMaterialColor()
+    {
+        //改变材质的颜色
+        _material.DOColor(Color.red, 3);
+    }
+
+    [ButtonGroup("Material/材质/方法组01")]
+    private void GradientMaterialColor()
+    {
+        //实现渐变:参数一为渐变条，需要提前声明;参数二为持续时间
+        _material.DOGradientColor(_gradient, 5f);
+    }
+    
+    [ButtonGroup("Material/材质/方法组02")]
+    private void OffsetMaterialTexture2d()
+    {
+        //改变贴图位置
+        _material.DOOffset(Vector3.zero, 2);
+    }
+
+    [ButtonGroup("Material/材质/方法组02")]
+    private void BlendMaterialColor()
+    {
+        //将两个材质的颜色混合在一起
+        _material.DOBlendableColor(Color.green, 3);
+        _material.DOBlendableColor(Color.yellow, 3);
+    }
+    
+    #endregion
+    
 }
  
