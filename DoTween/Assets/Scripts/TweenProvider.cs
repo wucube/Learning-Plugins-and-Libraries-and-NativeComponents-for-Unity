@@ -140,6 +140,7 @@ public class TweenProvider : MonoBehaviour
     {
         _transCube.DORotateQuaternion(Quaternion.Euler(40, 180, 0), 8);
     }
+<<<<<<< HEAD
 
     [Button("跳跃函数")]
     private void Jump()
@@ -197,6 +198,8 @@ public class TweenProvider : MonoBehaviour
     }
     
     #endregion
+=======
+>>>>>>> 31351c26924d89824f67dd791bb98d842e094571
     
 }
  
