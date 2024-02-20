@@ -10,6 +10,7 @@
 #### DoTween
 
 - **DOTween(HotTween V2)**: https://dotween.demigiant.com/
+-  中文教程文档:https://www.fantsida.com/d/249
 
 
 #### 运行环境
