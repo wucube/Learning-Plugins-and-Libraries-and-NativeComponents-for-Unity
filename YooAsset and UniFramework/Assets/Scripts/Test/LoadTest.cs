@@ -31,12 +31,11 @@ public class LoadTest : MonoBehaviour
     }
     
     
-
     [Button("加载枪械模")]
     private void LoadGun(string modelName)
     {
 
-        AssetHandle assetHandle =  _package.LoadAssetAsync<GameObject>($"Assets/_Assets/Model/Gun/{modelName}.FBX");
+        AssetHandle assetHandle =  _package.LoadAssetAsync<GameObject>($"Assets/ArtRes/Model/Gun/{modelName}.FBX");
         assetHandle.Completed += Handle_Completed;
     }
 

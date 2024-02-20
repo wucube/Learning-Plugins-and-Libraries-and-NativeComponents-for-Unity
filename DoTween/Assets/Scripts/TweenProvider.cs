@@ -135,6 +135,6 @@ public class TweenProvider : MonoBehaviour
     {
         _transCube.DORotateQuaternion(Quaternion.Euler(40, 180, 0), 8);
     }
-
+    
 }
  

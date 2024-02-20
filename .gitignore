@@ -9,7 +9,9 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
-[Bb]undles/
+
+# YooAsset Output Path
+[Bb]undles/ 
 
 # VisualStudio Build results
 [Dd]ebug/
