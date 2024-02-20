@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Sirenix.OdinInspector;
-using Sirenix.OdinInspector.Editor.Validation;
 using UnityEngine.UI;
 
 public class TweenProvider : MonoBehaviour
@@ -17,19 +14,7 @@ public class TweenProvider : MonoBehaviour
 
     [SerializeField] private Gradient _gradient;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-
+    
     [Button("使用通用方法改变位置")]
     private void ChangePos()
     {
@@ -140,7 +125,6 @@ public class TweenProvider : MonoBehaviour
     {
         _transCube.DORotateQuaternion(Quaternion.Euler(40, 180, 0), 8);
     }
-<<<<<<< HEAD
 
     [Button("跳跃函数")]
     private void Jump()
@@ -198,8 +182,6 @@ public class TweenProvider : MonoBehaviour
     }
     
     #endregion
-=======
->>>>>>> 31351c26924d89824f67dd791bb98d842e094571
     
 }
  
