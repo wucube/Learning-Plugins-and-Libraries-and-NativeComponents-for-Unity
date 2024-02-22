@@ -42,8 +42,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Editor\ScriptableObject\CharacterPropertySO.cs" />
+     <Compile Include="Assets\Scripts\Editor\EditorWindow\MyCustomEditorWindow.cs" />
      <Folder Include="Assets\Scripts\Editor\ScriptableObject" />
      <Folder Include="Assets\Scripts\Editor" />
+     <Folder Include="Assets\Scripts\Editor\EditorWindow" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2021.3.30f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

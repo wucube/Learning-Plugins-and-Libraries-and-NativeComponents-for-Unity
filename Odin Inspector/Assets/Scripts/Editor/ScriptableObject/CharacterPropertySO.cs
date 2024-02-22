@@ -37,7 +37,7 @@ public class CharacterPropertySO : ScriptableObject
     }
 
     [Button("角色血量+1")]
-    public void Update(int value)
+    public void MyUpdate(int value)
     {
         _hp += value;
     }

@@ -1,16 +1,15 @@
 ﻿using System;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Sirenix.OdinInspector.Editor;
 
-public class CharacterRun:MonoBehaviour
+public class CharacterRun : MonoBehaviour
 {
     [SerializeField] private float _hp;
     [SerializeField] private float _mp;
-    [LabelText("角色名称")]
-    [SerializeField] private string _characterName;
-    [LabelText("角色描述")]
-    [SerializeField] private string _desc;
-
+    [LabelText("角色名称")] [SerializeField] private string _characterName;
+    [LabelText("角色描述")] [SerializeField] private string _desc;
+    
     
     [Button]
     public void Print()
@@ -19,8 +18,9 @@ public class CharacterRun:MonoBehaviour
     }
 
     [Button("角色血量+1")]
-    public void Update(int value = 1)
+    public void MyUpdate(int value = 1)
     {
         _hp += value;
     }
 }
+   

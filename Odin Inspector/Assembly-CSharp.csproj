@@ -42,8 +42,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Runtime\CharacterRun.cs" />
+     <Compile Include="Assets\Scripts\Runtime\Data\TestData.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\ScriptableObjectAssets" />
+     <Folder Include="Assets\Scripts\Runtime\Data" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Scripts\Runtime" />
