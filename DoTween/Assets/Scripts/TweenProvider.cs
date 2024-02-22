@@ -7,8 +7,9 @@ using UnityEngine.UI;
 public class TweenProvider : MonoBehaviour
 {
     [SerializeField] private Transform _sphereTrans;
-    [SerializeField] private Vector3 _rate;
-    [SerializeField] private Vector3 _target;
+
+    [SerializeField] private Vector3 _curValue = Vector3.one;
+    [SerializeField] private Vector3 _tarValue;
     [SerializeField] private Text _text;
     [SerializeField] private Material _material;
 
@@ -28,19 +29,19 @@ public class TweenProvider : MonoBehaviour
     [ButtonGroup("GenericWay/通用方法/方法组01")]
     private void ChangePosition()
     {
-        DOTween.To(() => transform.position, _rate => transform.position = _rate, _target, 1);
+        DOTween.To(() => transform.position, rate => transform.position = rate, _tarValue, 1);
     }
 
     [ButtonGroup("GenericWay/通用方法/方法组01")]
     private void ChangeRotation()
     {
-        DOTween.To(() => transform.rotation, _rate => transform.rotation = _rate, _target, 3);
+        DOTween.To(() => transform.rotation, rate => transform.rotation = rate, _tarValue, 3);
     }
 
     [ButtonGroup("GenericWay/通用方法/方法组01")]
     private void ChangeScale()
     {
-        DOTween.To(() => transform.localScale, _rate => transform.localScale = _rate, _target, 4);
+        DOTween.To(() => transform.localScale, rate => transform.localScale = rate, _tarValue, 4);
     }
 
     #endregion
@@ -78,14 +79,17 @@ public class TweenProvider : MonoBehaviour
     [ButtonGroup("SetChain/链式设置/方法组01")]
     private void SetLoop()
     {
-        DOTween.To(() => transform.position, _rate => transform.position = _rate, _target, 2)
+        DOTween.To(() => transform.position, rate => transform.position = rate, _tarValue, 2)
             .SetLoops(3, LoopType.Restart);
     }
     
     [ButtonGroup("SetChain/链式设置/方法组01")]
     private void SetTarget()
     {
-        transform.DOScale(Vector3.one * 4, 1).SetTarget(_sphereTrans);
+        //创建一个在X轴上移动的Tween动画，持续5秒钟，循环执行来回移动，具有一定的延迟和缓动效果
+        transform.DOMoveX(20, 5).SetAutoKill(true).SetDelay(3).SetEase(Ease.InOutCirc)  
+            .SetId("superTween").SetLoops( -1, LoopType.Yoyo).SetRecyclable()  
+            .SetRelative().SetSpeedBased().SetTarget(transform).SetUpdate(UpdateType.Normal, true); 
     }
     
     #endregion

@@ -307,7 +307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869014658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.36, y: 0, z: 0}
+  m_LocalPosition: {x: -5, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -508,9 +508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6805c490150f1994090aa58a67a4e828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _otherTrans: {fileID: 0}
-  _rate: {x: 0.1, y: 0.1, z: 0.1}
-  _target: {x: 3, y: 3, z: 0}
+  _sphereTrans: {fileID: 869014662}
+  _curValue: {x: 1, y: 1, z: 1}
+  _tarValue: {x: 3, y: 3, z: 3}
   _text: {fileID: 0}
   _material: {fileID: 2100000, guid: 7c78dddae9c46ff48bc12866c8c511f4, type: 2}
   _gradient:
