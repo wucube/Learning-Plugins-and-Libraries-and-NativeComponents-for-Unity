@@ -52,6 +52,7 @@ public class UniTaskBaseTest : MonoBehaviour
     /// </summary>
     private async void OnClickWebRequest()
     {
+        Debug.Log("正在请求下载图片...");
         var webRequest =
             UnityWebRequestTexture.GetTexture("https://i0.hdslb.com/bfs/static/jinkela/video/asserts/33-coin-ani.png");
         var result = await webRequest.SendWebRequest();
