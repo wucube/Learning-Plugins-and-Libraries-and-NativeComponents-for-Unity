@@ -1,15 +1,11 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Sirenix.OdinInspector;
-using Sirenix.OdinInspector.Editor;
-
 public class CharacterRun : MonoBehaviour
 {
     [SerializeField] private float _hp;
     [SerializeField] private float _mp;
     [LabelText("角色名称")] [SerializeField] private string _characterName;
     [LabelText("角色描述")] [SerializeField] private string _desc;
-    
     
     [Button]
     public void Print()
