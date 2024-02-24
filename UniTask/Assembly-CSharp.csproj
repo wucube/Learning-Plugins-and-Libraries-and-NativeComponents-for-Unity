@@ -44,11 +44,26 @@
      <Compile Include="Assets\Scripts\UniTaskAsyncSample_Base.cs" />
      <Compile Include="Assets\Scripts\PerformanceTest.cs" />
      <Compile Include="Assets\Scripts\UniTaskBaseTest.cs" />
+     <Compile Include="Assets\Scripts\UniTaskWaitTest.cs" />
+     <Compile Include="Assets\Scripts\UniTaskAsyncSample_Wait.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskBaseTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskAsyncSample_Base.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskWaitTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\Runner.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskCancelTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskWhenTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskAsyncSample_Wait.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\UniTaskTutorial\BaseUsing\Resources" />
      <None Include="Assets\Resources\Test.txt" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Resources" />
+     <Folder Include="Assets\UniTaskTutorial\BaseUsing\Scripts" />
+     <None Include="Assets\UniTaskTutorial\BaseUsing\Resources\test.txt" />
+     <Folder Include="Assets\UniTaskTutorial\BaseUsing" />
+     <Folder Include="Assets\UniTaskTutorial" />
+     <Folder Include="Assets\UniTaskTutorial\BaseUsing\Scenes" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2021.3.30f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
