@@ -53,9 +53,12 @@
      <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskCancelTest.cs" />
      <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskWhenTest.cs" />
      <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskAsyncSample_Wait.cs" />
+     <Compile Include="Assets\Scripts\UniTaskWhenTest.cs" />
+     <Compile Include="Assets\Scripts\Runner.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\UniTaskTutorial\BaseUsing\Resources" />
+     <Folder Include="Assets\Materials" />
      <None Include="Assets\Resources\Test.txt" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Resources" />
