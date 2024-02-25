@@ -41,20 +41,21 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\UniTaskAsyncSample_Base.cs" />
-     <Compile Include="Assets\Scripts\PerformanceTest.cs" />
-     <Compile Include="Assets\Scripts\UniTaskBaseTest.cs" />
-     <Compile Include="Assets\Scripts\UniTaskWaitTest.cs" />
-     <Compile Include="Assets\Scripts\UniTaskAsyncSample_Wait.cs" />
-     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskBaseTest.cs" />
-     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskAsyncSample_Base.cs" />
      <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskWaitTest.cs" />
      <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\Runner.cs" />
+     <Compile Include="Assets\Scripts\UniTaskWhenTest.cs" />
      <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskCancelTest.cs" />
+     <Compile Include="Assets\Scripts\Runner.cs" />
+     <Compile Include="Assets\Scripts\UniTaskWaitTest.cs" />
+     <Compile Include="Assets\Scripts\UniTaskAsyncSample_Base.cs" />
+     <Compile Include="Assets\Scripts\PerformanceTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskAsyncSample_Base.cs" />
+     <Compile Include="Assets\Scripts\UniTaskAsyncSample_Wait.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskBaseTest.cs" />
+     <Compile Include="Assets\Scripts\UniTaskBaseTest.cs" />
      <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskWhenTest.cs" />
      <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskAsyncSample_Wait.cs" />
-     <Compile Include="Assets\Scripts\UniTaskWhenTest.cs" />
-     <Compile Include="Assets\Scripts\Runner.cs" />
+     <Compile Include="Assets\Scripts\UniTaskCancelTest.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\UniTaskTutorial\BaseUsing\Resources" />
