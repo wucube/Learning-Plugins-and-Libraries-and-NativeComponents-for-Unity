@@ -41,24 +41,54 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\UniTaskWhenTest.cs" />
-     <Compile Include="Assets\Scripts\UniTaskCancelTest.cs" />
-     <Compile Include="Assets\Scripts\ForgetSample.cs" />
-     <Compile Include="Assets\Scripts\Runner.cs" />
-     <Compile Include="Assets\Scripts\UniTaskWaitTest.cs" />
-     <Compile Include="Assets\Scripts\UniTaskAsyncSample_Base.cs" />
-     <Compile Include="Assets\Scripts\PerformanceTest.cs" />
-     <Compile Include="Assets\Scripts\UnityWebRequestTimeoutSample.cs" />
-     <Compile Include="Assets\Scripts\UniTaskAsyncSample_Wait.cs" />
-     <Compile Include="Assets\Scripts\CallbackSample.cs" />
-     <Compile Include="Assets\Scripts\UniTaskBaseTest.cs" />
-     <Compile Include="Assets\Scripts\ThreadSample.cs" />
+     <Compile Include="Assets\Scripts\Base\UniTaskWhenTest.cs" />
+     <Compile Include="Assets\Scripts\Base\UniTaskCancelTest.cs" />
+     <Compile Include="Assets\Scripts\Base\ForgetSample.cs" />
+     <Compile Include="Assets\Scripts\Base\Runner.cs" />
+     <Compile Include="Assets\Scripts\Base\UniTaskWaitTest.cs" />
+     <Compile Include="Assets\Scripts\Base\UniTaskAsyncSample_Base.cs" />
+     <Compile Include="Assets\Scripts\Base\PerformanceTest.cs" />
+     <Compile Include="Assets\Scripts\Base\UnityWebRequestTimeoutSample.cs" />
+     <Compile Include="Assets\Scripts\Base\UniTaskAsyncSample_Wait.cs" />
+     <Compile Include="Assets\Scripts\Base\CallbackSample.cs" />
+     <Compile Include="Assets\Scripts\Base\UniTaskBaseTest.cs" />
+     <Compile Include="Assets\Scripts\Base\ThreadSample.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskBaseTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskAsyncSample_Base.cs" />
+     <Compile Include="Assets\UniTaskTutorial\Advance\Scripts\FireBulletSample.cs" />
+     <Compile Include="Assets\UniTaskTutorial\Advance\Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsingNext\Scripts\TimeoutTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\Advance\Scripts\UIEventsSample.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsingNext\Scripts\ForgetSample.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsingNext\Scripts\CallbackSample.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskWaitTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\Runner.cs" />
+     <Compile Include="Assets\UniTaskTutorial\Advance\Scripts\PlayerControlSample.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsingNext\Scripts\ThreadSample.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskCancelTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskWhenTest.cs" />
+     <Compile Include="Assets\UniTaskTutorial\Advance\Scripts\AsyncReactivePropertySample.cs" />
+     <Compile Include="Assets\UniTaskTutorial\BaseUsing\Scripts\UniTaskAsyncSample_Wait.cs" />
+     <Compile Include="Assets\Scripts\Advance\UIEventSample.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Materials" />
+     <Folder Include="Assets\Scripts\Base" />
+     <Folder Include="Assets\UniTaskTutorial\Advance\Sources" />
+     <Folder Include="Assets\UniTaskTutorial\BaseUsing\Scripts" />
      <None Include="Assets\Resources\Test.txt" />
      <Folder Include="Assets\Scripts" />
+     <Folder Include="Assets\UniTaskTutorial\BaseUsingNext\Scripts" />
+     <Folder Include="Assets\UniTaskTutorial" />
+     <Folder Include="Assets\Scenes\Advance" />
+     <Folder Include="Assets\Scenes\Base" />
+     <Folder Include="Assets\UniTaskTutorial\Advance\Scenes" />
      <Folder Include="Assets\Resources" />
+     <Folder Include="Assets\Scripts\Advance" />
+     <Folder Include="Assets\UniTaskTutorial\Advance" />
+     <Folder Include="Assets\UniTaskTutorial\BaseUsingNext" />
+     <Folder Include="Assets\UniTaskTutorial\BaseUsing" />
+     <Folder Include="Assets\UniTaskTutorial\Advance\Scripts" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2021.3.30f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
