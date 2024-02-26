@@ -12,6 +12,11 @@
 - **DOTween(HotTween V2)**: https://dotween.demigiant.com/
 -  中文教程文档:https://www.fantsida.com/d/249
 
+#### UniTask
+
+- **UniTask**:https://github.com/Cysharp/UniTask
+- 教程视频:[精选Unity-Github开源库分享 最完美的异步操作解决方案 UniTask (一)简介和安装_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1NG411s7hN/)
+
 
 #### 运行环境
 - Unity Editor：2021.3.30f1c1
