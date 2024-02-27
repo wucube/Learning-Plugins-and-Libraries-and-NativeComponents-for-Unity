@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 53715608}
   m_Layer: 0
   m_Name: "\u76EE\u68072"
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,6 +220,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &166508296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166508297}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166508297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166508296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1212205238}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173684668
 GameObject:
@@ -310,6 +341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 188770254}
+  - component: {fileID: 188770255}
   m_Layer: 0
   m_Name: PlayerControl
   m_TagString: Untagged
@@ -332,6 +364,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &188770255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188770253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c99d9a49f744e18a014e2051897fe50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRoot: {fileID: 566755259}
+  controlParams:
+    rotateSpeed: 5
+    moveSpeed: 5
+    fireInterval: 0.5
+  onFireEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 775055897}
+        m_TargetAssemblyTypeName: UniTaskUsageSample.Advance.FireBulletSample, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &566755255
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,17 +537,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 775055895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c99d9a49f744e18a014e2051897fe50, type: 3}
+  m_Script: {fileID: 11500000, guid: cd86b0562f964cb884f53564a3fbf2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRoot: {fileID: 0}
-  controlParams:
-    rotateSpeed: 0
-    moveSpeed: 0
-    fireInterval: 0
-  onFireEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  FirePoint: {fileID: 166508297}
+  bulletTemplate: {fileID: 6768764990697517797, guid: 8f0c306a00eb0f449ba1c878340f0e71, type: 3}
+  flySpeed: 30
+  bulletAutoDestroyTime: 4
+  currentScoreText: {fileID: 173684670}
+  scoreColliders:
+  - Collider: {fileID: 1038046107}
+    Score: 5
+  - Collider: {fileID: 53715608}
+    Score: 10
+  hitEffect: {fileID: 665566543239502876, guid: fa2103659e414f54aa3fa873efd8d1a1, type: 3}
 --- !u!1 &881236518
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +666,7 @@ GameObject:
   - component: {fileID: 1038046107}
   m_Layer: 0
   m_Name: "\u76EE\u68071"
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -902,10 +969,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212205237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5903, y: 0.3519, z: 0.2882}
-  m_LocalScale: {x: 0.18854924, y: 0.43703616, z: 1.1925682}
+  m_LocalPosition: {x: 0.5903, y: 0.4689, z: 0.2296}
+  m_LocalScale: {x: 0.18854924, y: 0.20304699, z: 0.98733467}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 166508297}
   m_Father: {fileID: 566755259}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1273,7 +1341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4E2A\u4F53\u5F97\u5206:"
+  m_Text: "\u7EFF\u8272\u5F975\u5206\uFF0C\u6A59\u8272\u5F9710\u5206"
 --- !u!222 &2048943634
 CanvasRenderer:
   m_ObjectHideFlags: 0
