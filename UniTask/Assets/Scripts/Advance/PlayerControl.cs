@@ -4,7 +4,7 @@ using Cysharp.Threading.Tasks.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace UniTaskTutorial.Advance.Scripts
+namespace UniTaskUsageSample.Advance
 {
     [Serializable]
     public struct ControlParams
@@ -13,7 +13,6 @@ namespace UniTaskTutorial.Advance.Scripts
         [Header("移动速度")] public float moveSpeed;
         [Header("开枪最小间隔")] public float fireInterval;
     }
-
     public class PlayerControl
     {
         private Transform _playerRoot;

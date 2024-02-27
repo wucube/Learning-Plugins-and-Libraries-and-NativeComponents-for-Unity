@@ -1,11 +1,18 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System.IO;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class UniTaskAsyncSample_Base
-{
-    public async UniTask<Object> LoadAsync<T>(string path) where T : Object
+namespace UniTaskUsageSample.Base
+{ 
+    public class UniTaskAsyncSample_Base
     {
-        var asyncOperation = Resources.LoadAsync<T>(path);
-        return (await asyncOperation);
+        public async UniTask<Object> LoadAsync<T>(string path) where T : Object
+        {
+            var asyncOperation = Resources.LoadAsync<T>(path);
+            return (await asyncOperation);
+        }
     }
 }
+
+

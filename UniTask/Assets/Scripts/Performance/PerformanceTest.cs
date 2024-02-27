@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Diagnostics;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class PerformanceTest : MonoBehaviour
