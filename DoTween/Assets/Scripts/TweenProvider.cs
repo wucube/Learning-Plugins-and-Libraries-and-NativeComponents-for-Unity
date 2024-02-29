@@ -94,30 +94,81 @@ public class TweenProvider : MonoBehaviour
     
     #endregion
     
-    
     [Button("倒放")]
     private void From()
     {
         transform.DOMoveX(-6, 2).From();
     }
+    
+    #region 事件响应
 
-    [Button("动画完成后事件响应")]
-    private void ChangeTransWithEvent()
+    [BoxGroup("EventReactive", ShowLabel = false)]
+    [TitleGroup("EventReactive/事件响应")]
+    
+    [ButtonGroup("EventReactive/事件响应/方法组01")]
+    private void OnStart()
     {
-        transform.DOMoveX(4, 2).OnStart(OnEvent);
+        transform.DOMoveX(4, 2).OnStart(()=>Debug.Log("动画补间开始"));
     }
 
-    private void OnEvent()
+    [ButtonGroup("EventReactive/事件响应/方法组01")]
+    private void OnComplete()
     {
-        Debug.Log("动画补间完成");
+        transform.DOMoveX(4, 3).OnComplete(()=>Debug.Log("动画结束"));
     }
+    
+    #endregion
 
 
-    [Button("立即完成动画")]
-    private void ImmediatelyCompleteAnimation()
+    #region 常用用法
+    [BoxGroup("CommonUsage",ShowLabel = false)]
+    [TitleGroup("CommonUsage/常用用法")]
+    
+    [ButtonGroup("CommonUsage/常用用法/方法组01")]
+    private void ImmediatelyComplete()
     {
+        //立即完成正在进行的 Tweener 或 Sequence 动画
+        //在某些情况下非常有用，例如当你想在某个条件满足时立即停止动画，或者在程序中的特定时间点将动画重置为起始状态。
+        //特别是频繁调用动画时，在上一个动画还没有完成的情况下，紧接着就进行下一个动画，会造成了物体大小畸形的问题
         transform.DOComplete();
     }
+ 
+    [ButtonGroup("CommonUsage/常用用法/方法组01")]
+    private void Move()
+    {
+        //使得物体移动，第一个参数类型是Vector3，代表物体要移动到的世界坐标，第二个参数是移动到该位置所需要的时间
+        transform.DOMove(new Vector3(5, 9, 1), 6);
+    }
+
+    [ButtonGroup("CommonUsage/常用用法/方法组01")]
+    private void LocalMoveX()
+    {
+        //使得物体在x轴进行移动，第一个参数是移动到的x的位置，以自身坐标
+        transform.DOLocalMoveX(9, 7);
+    }
+
+    [ButtonGroup("CommonUsage/常用用法/方法组02")]
+    private void BlendMoveBy()
+    {
+        //blend对物体的运动进行累加,参数一: 累加到的目标数，参数二：累加所需要的时间
+        transform.DOBlendableMoveBy(Vector3.one, 2);
+    }
+    
+    [ButtonGroup("CommonUsage/常用用法/方法组02")]
+    private void PunchPosition()
+    {
+        /*使得物体到达参数一的位置就进行往返运动
+         *参数一 能到达的位置
+         *参数二 需要的时间
+         *参数三 往返的次数
+         *参数四 值越大，反方向给的力就越大
+         */
+        transform.DOPunchPosition(new Vector3(0, 5, 0), 5, 2, 0.5f);
+    }
+
+    
+    #endregion
+    
 
     [Button("移动自身坐标")]
     private void MoveBySelf()
