@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace UniTaskUsageSample.Advance
 {
-    public class PlayerControllerSample : MonoBehaviour
+    public class PlayerControlSample : MonoBehaviour
     {
         [Header("玩家")]
         [SerializeField]

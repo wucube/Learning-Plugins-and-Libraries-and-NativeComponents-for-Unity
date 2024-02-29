@@ -15,7 +15,7 @@ namespace UniTaskUsageSample.Advance
         public float Score;
     }
 
-    public class FireBulletSample : MonoBehaviour
+    public class BulletShooterSample : MonoBehaviour
     {
         public Transform FirePoint;
 
@@ -53,7 +53,12 @@ namespace UniTaskUsageSample.Advance
                 currentScoreText.text = $"总分:{totalScore}";
             }
         }
-
+        
+        //UniTask将事件封装为异步可迭代器，在异步可迭代器中完成各种操作
+        /*开火事件的核心
+         * 将碰撞事件转化为UniTask的异步可迭代器
+         * 在异步可迭代器中检测每次碰撞，执行逻辑处理
+         */
         private async UniTaskVoid OnClickFire()
         {
             var bullet = Object.Instantiate(bulletTemplate);
@@ -70,13 +75,23 @@ namespace UniTaskUsageSample.Advance
 
             var source = new UniTaskCompletionSource<Collision>();
             // 注意可以使用where take(1)或FirstAsync来简化操作
+            // GetAsyncCollisionEnterTrigger 获取transform上的碰撞事件，并将事件转为异步可迭代器
             bullet.transform.GetAsyncCollisionEnterTrigger().ForEachAsync((collision) =>
             {
+                //检测每次的碰撞
                 if (collision.collider.CompareTag("Target"))
                 {
                     source.TrySetResult(collision);
                 }
             }, cancellationToken: bulletToken);
+            
+            
+            /*与下面 result==1 等价的操作
+             * var bulletCollisionTask = bullet.transform.GetAsyncCollisionEnterTrigger()
+             *      .FirstAsync(collision => collision.collider.CompareTag("Target"), bulletToken);
+             * int result = await UniTask.WhenAny(waitAutoDestroy, bulletCollisionTask);
+             */
+            
             int result = await UniTask.WhenAny(waitAutoDestroy, source.Task);
             if (result == 0)
             {

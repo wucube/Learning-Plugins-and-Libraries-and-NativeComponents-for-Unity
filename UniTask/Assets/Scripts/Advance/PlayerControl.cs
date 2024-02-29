@@ -46,11 +46,13 @@ namespace UniTaskUsageSample.Advance
 
         private IUniTaskAsyncEnumerable<(Vector3, float, float)> CheckPlayerInput()
         {
+            //发射每一次的事件
             return UniTaskAsyncEnumerable.Create<(Vector3, float, float)>(async (writer, token) =>
             {
                 await UniTask.Yield();
                 while (!token.IsCancellationRequested)
                 {
+                    //向 writer 写入 每次发送 UniTask<T> T的实例
                     await writer.YieldAsync((GetInputMoveValue(), GetInputAxisValue(), GetIfFired()));
                     await UniTask.Yield();
                 }
