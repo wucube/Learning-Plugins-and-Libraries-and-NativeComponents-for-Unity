@@ -44,8 +44,8 @@
      <Compile Include="Assets\Scripts\Advance\UIEventSample.cs" />
      <Compile Include="Assets\Scripts\Base\UniTaskWhenTest.cs" />
      <Compile Include="Assets\Scripts\Base\UniTaskCancelTest.cs" />
-     <Compile Include="Assets\Scripts\Advance\FireBulletSample.cs" />
-     <Compile Include="Assets\Scripts\Advance\PlayerControllerSample.cs" />
+     <Compile Include="Assets\Scripts\Advance\BulletShooterSample.cs" />
+     <Compile Include="Assets\Scripts\Advance\PlayerControlSample.cs" />
      <Compile Include="Assets\Scripts\Base\ForgetSample.cs" />
      <Compile Include="Assets\Scripts\Base\Runner.cs" />
      <Compile Include="Assets\Scripts\Base\UniTaskWaitTest.cs" />
