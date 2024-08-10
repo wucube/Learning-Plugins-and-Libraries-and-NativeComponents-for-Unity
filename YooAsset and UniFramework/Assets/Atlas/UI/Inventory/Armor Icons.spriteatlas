@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Assets/Atlas/UI/Inventory/Armor Icons.spriteatlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 14edd3507f2fbd647a0cc91e48619224, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 66d6d642a1d9e284f810d453c079c40d, type: 3}
+  - {fileID: 21300000, guid: 182ca6f22f97b4f4c89499401e50e4b5, type: 3}
+  - {fileID: 21300000, guid: 60932b48cee789448a1806b3a1794039, type: 3}
+  - {fileID: 21300000, guid: 8979065ad9b1ee64db88267a777840cd, type: 3}
+  - {fileID: 21300000, guid: 674552dd8ce85a7468dd8d4c7cebc113, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ARMOR 2
+  - ARMOR 4
+  - ARMOR 3
+  - ARMOR 1
+  - ARMOR 5
+  m_RenderDataMap: {}
+  m_Tag: Assets/Atlas/UI/Inventory/Armor Icons.spriteatlas
+  m_IsVariant: 0

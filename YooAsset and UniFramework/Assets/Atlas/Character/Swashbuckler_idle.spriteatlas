@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Swashbuckler_idle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 302011300, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 1294428539, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 1967595707, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 1074933477, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 731850655, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: -860884559, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 1999837295, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 2052101437, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 1304664011, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 1324208571, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: -1456967901, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 310016117, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: -147969693, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 1356087196, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: 284212406, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  - {fileID: -1224769870, guid: 54692d58ce293df428cb422f634b54a0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Swashbuckler_idle_14
+  - Swashbuckler_idle_15
+  - Swashbuckler_idle_9
+  - Swashbuckler_idle_10
+  - Swashbuckler_idle_8
+  - Swashbuckler_idle_11
+  - Swashbuckler_idle_12
+  - Swashbuckler_idle_13
+  - Swashbuckler_idle_5
+  - Swashbuckler_idle_4
+  - Swashbuckler_idle_7
+  - Swashbuckler_idle_6
+  - Swashbuckler_idle_1
+  - Swashbuckler_idle_0
+  - Swashbuckler_idle_3
+  - Swashbuckler_idle_2
+  m_RenderDataMap: {}
+  m_Tag: Swashbuckler_idle
+  m_IsVariant: 0

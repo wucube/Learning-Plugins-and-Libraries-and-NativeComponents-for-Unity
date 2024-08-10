@@ -39,10 +39,10 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 3
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,20 +89,516 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 288
+        width: 52
+        height: 56
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d723688a429e4df46a1e111991565041
+      internalID: -1116883094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 296
+        width: 18
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b826133246f11840ab1cb844d827fac
+      internalID: 2038303071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 318
+        width: 16
+        height: 26
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7aa3c17fc82ca4686d03a371cf0295
+      internalID: 534760684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 332
+        width: 14
+        height: 12
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093a54c42c651774e841371dd879e31a
+      internalID: -1956169703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44ebbae8541c1d45937fd25850a1624
+      internalID: 1715849744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 258
+        width: 6
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddd1a019ce12f9458997adffb540664
+      internalID: 1016202985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_6
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 244
+        width: 40
+        height: 22
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c449b1137cd297141821e595d679f80d
+      internalID: 1555076011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 258
+        width: 6
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86482a4b624a34a4e92e4bd83bd1879e
+      internalID: -1226026789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_8
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 256
+        width: 6
+        height: 4
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6e5e11c2f886f4680a70afd8d4e579
+      internalID: 1121066031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_9
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 258
+        width: 22
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1602cdcec252900418880679db66ec87
+      internalID: -2147005855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 258
+        width: 6
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566c9731f301f094b819221627ec49d2
+      internalID: -775907621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_11
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 162
+        width: 6
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e967297f7d82a884e88439fe8ca9f236
+      internalID: 670402623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 132
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc53beb7bd9ecb4284bafe887d58bb4
+      internalID: 2022739477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_13
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 162
+        width: 6
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deac7bf25a639774db0dda4e7d12f98b
+      internalID: 1374972634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_14
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 148
+        width: 40
+        height: 22
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b784b5cb67d6ce246b19dab8b7228c4b
+      internalID: -600224292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 162
+        width: 22
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b28c8da8b2e9d44bfe83a0d5bf645f
+      internalID: -1017699355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_16
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 160
+        width: 6
+        height: 4
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07145c0a1b83eb4fb0497d4e1ad2486
+      internalID: -1850916458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_17
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 162
+        width: 6
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ac9c13373fb704a9ca35304d2a23df
+      internalID: 42665905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_18
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 44
+        width: 52
+        height: 52
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8527cffd17fc445951da0b317493c9
+      internalID: 1056182775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_19
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 44
+        width: 18
+        height: 44
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cd4e19be9b20946acf0cd3e5ffec0d
+      internalID: 1401078917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_20
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 44
+        width: 14
+        height: 24
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e001f7a44d4f8cf4ca72feda84c572db
+      internalID: 1476059158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_melee_hitbox_21
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 44
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef5196d22174f74daaacf3921758136
+      internalID: 1417161839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a0fa2a3180873be43bd3b6a952fa3c90
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swashbuckler_melee_hitbox_0: -1116883094
+      Swashbuckler_melee_hitbox_1: 2038303071
+      Swashbuckler_melee_hitbox_10: -775907621
+      Swashbuckler_melee_hitbox_11: 670402623
+      Swashbuckler_melee_hitbox_12: 2022739477
+      Swashbuckler_melee_hitbox_13: 1374972634
+      Swashbuckler_melee_hitbox_14: -600224292
+      Swashbuckler_melee_hitbox_15: -1017699355
+      Swashbuckler_melee_hitbox_16: -1850916458
+      Swashbuckler_melee_hitbox_17: 42665905
+      Swashbuckler_melee_hitbox_18: 1056182775
+      Swashbuckler_melee_hitbox_19: 1401078917
+      Swashbuckler_melee_hitbox_2: 534760684
+      Swashbuckler_melee_hitbox_20: 1476059158
+      Swashbuckler_melee_hitbox_21: 1417161839
+      Swashbuckler_melee_hitbox_3: -1956169703
+      Swashbuckler_melee_hitbox_4: 1715849744
+      Swashbuckler_melee_hitbox_5: 1016202985
+      Swashbuckler_melee_hitbox_6: 1555076011
+      Swashbuckler_melee_hitbox_7: -1226026789
+      Swashbuckler_melee_hitbox_8: 1121066031
+      Swashbuckler_melee_hitbox_9: -2147005855
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

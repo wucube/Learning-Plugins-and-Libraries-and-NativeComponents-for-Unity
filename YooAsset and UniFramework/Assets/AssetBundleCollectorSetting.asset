@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Name: AssetBundleCollectorSetting
+  m_EditorClassIdentifier: 
+  ShowPackageView: 1
+  ShowEditorAlias: 0
+  UniqueBundleName: 1
+  Packages:
+  - PackageName: TestPackage
+    PackageDesc: 
+    EnableAddressable: 0
+    LocationToLower: 0
+    IncludeAssetGUID: 0
+    AutoCollectShaders: 1
+    IgnoreRuleName: NormalIgnoreRule
+    Groups:
+    - GroupName: UI
+      GroupDesc: 
+      AssetTags: Level1
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/ArtRes/Fantasy RPG Icons/Admurins Skill
+        CollectorGUID: b4f50f3cacf2ca7419f10c9e83ee0341
+        CollectorType: 1
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Atlas/UI/Skill/Skill Icons.spriteatlas
+        CollectorGUID: 827702a2098d6ad4692b954f903246f3
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Atlas/UI/Inventory/Sword Icons.spriteatlas
+        CollectorGUID: c330bba56aa6f2b4e826ead4d663f23d
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/ArtRes/Fantasy RPG Icons/Inventory Set/SWORDS
+        CollectorGUID: 93ceb856fe9f42c4d8f5143b00968b03
+        CollectorType: 1
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Atlas/UI/Inventory/Armor Icons.spriteatlas
+        CollectorGUID: 5b3f52ed0bd223f42b81e7bcee3d878c
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/ArtRes/Fantasy RPG Icons/Inventory Set/ARMORS
+        CollectorGUID: 14edd3507f2fbd647a0cc91e48619224
+        CollectorType: 1
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Atlas/Avatart Icons/ELVES.spriteatlas
+        CollectorGUID: 2c221ea1cba2ecd4995dcc0ba68f6710
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/ArtRes/RPG Avatar Icons/ELVES
+        CollectorGUID: a70be5c587664524faa28ca64ba047c1
+        CollectorType: 1
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Character
+      GroupDesc: 
+      AssetTags: Level2
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Atlas/Character/Swashbuckler_walk.spriteatlas
+        CollectorGUID: 1fdc0c0adb506c14eac659323d0e1b58
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/ArtRes/Fantasy RPG heroes/Character sprites/Swashbuckler_walk.png
+        CollectorGUID: 9cb543b36754dbe41b88518626009a59
+        CollectorType: 1
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Atlas/Character/Swashbuckler_idle.spriteatlas
+        CollectorGUID: f18af4f76e5cd6d4e91b6482975d3ed7
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/ArtRes/Fantasy RPG heroes/Character sprites/Swashbuckler_idle.png
+        CollectorGUID: 54692d58ce293df428cb422f634b54a0
+        CollectorType: 1
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: UI Prefab
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Prefabs/Skill_Icon_Image.prefab
+        CollectorGUID: 4560bb7d71cbd184099aaf13f5982d0e
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Prefabs/ELF-LADY.prefab
+        CollectorGUID: 9beb00f6e63c1b54eb3593016af2b22a
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Prefabs/ELF-PRINCE.prefab
+        CollectorGUID: d509a92a75e4b4843ae6082c235b2f4b
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Prefabs/ELF-WARRIOR.prefab
+        CollectorGUID: e1b2d8a629a82044b8efa4da65537398
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 

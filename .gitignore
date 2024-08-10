@@ -13,6 +13,9 @@
 # YooAsset Output Path
 [Bb]undles/ 
 
+# UOS CDN FilePath
+[Uu]OS CDN/
+
 # VisualStudio Build results
 [Dd]ebug/
 [Dd]ebugPublic/

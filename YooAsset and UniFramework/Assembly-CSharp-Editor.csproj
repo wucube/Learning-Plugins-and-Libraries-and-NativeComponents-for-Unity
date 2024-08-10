@@ -41,7 +41,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Samples\YooAsset\2.1.1\Space Shooter\GameScript\Editor\Encryption.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\UniTask Sample\UniTask\Editor\SplitterGUILayout.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\UniTask Sample\UniTask\Editor\UniTaskTrackerTreeView.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\UniTask Sample\UniTask\Editor\UniTaskTrackerWindow.cs" />
+    <None Include="Assets\Samples\YooAsset\2.2.2-preview\UniTask Sample\UniTask\Editor\UniTask.Editor.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity\2021.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -294,11 +297,11 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>D:\Unity\2021.3.40f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>D:\Unity\2021.3.40f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Unity\2021.3.40f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Reflection.Editor">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -308,12 +311,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
@@ -327,23 +324,11 @@
     <Reference Include="log4netPlastic">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
-    <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Utilities">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Utilities.Editor">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -735,20 +720,20 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="YooAsset.Editor">
+      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\YooAsset.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
@@ -762,17 +747,20 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
@@ -789,8 +777,14 @@
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="YooAsset">
+      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\YooAsset.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
       <HintPath>E:\UnityProject\Learning Plugins and Libraries NativeComponents for Unity\YooAsset and UniFramework\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
@@ -804,45 +798,29 @@
       <Project>{038f01cd-352d-7606-6641-b38f514ce29f}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="UniFramework.Machine.csproj">
-      <Project>{58206466-ac40-7049-936e-42d4948e17b5}</Project>
-      <Name>UniFramework.Machine</Name>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{ef91f8cb-fed5-fe5b-f1f6-5b04b22c1ab5}</Project>
+      <Name>UniTask.DOTween</Name>
     </ProjectReference>
-    <ProjectReference Include="UniFramework.Network.csproj">
-      <Project>{9c3180d6-7a1e-3260-c0aa-be0775ff6756}</Project>
-      <Name>UniFramework.Network</Name>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{f48579ba-ef1b-c3ad-2f9b-d24a8fb0a522}</Project>
+      <Name>UniTask.Linq</Name>
     </ProjectReference>
-    <ProjectReference Include="UniFramework.Reference.csproj">
-      <Project>{bb188a79-e047-7471-a7c5-6b4ed9d71536}</Project>
-      <Name>UniFramework.Reference</Name>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{305ecb63-5dfa-4caa-86a5-29e37582ea89}</Project>
+      <Name>UniTask.TextMeshPro</Name>
     </ProjectReference>
-    <ProjectReference Include="UniFramework.Singleton.csproj">
-      <Project>{9a2ac297-1f47-b9fa-0926-56ecef5823e0}</Project>
-      <Name>UniFramework.Singleton</Name>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{533046c3-fc28-e7c2-9747-c6257be41233}</Project>
+      <Name>UniTask</Name>
     </ProjectReference>
-    <ProjectReference Include="UniFramework.Event.csproj">
-      <Project>{e67ab48b-c3a9-4800-0dd4-0af4ba038d8a}</Project>
-      <Name>UniFramework.Event</Name>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{371af24c-db41-c677-3bea-9df9da1260c7}</Project>
+      <Name>UniTask.Addressables</Name>
     </ProjectReference>
-    <ProjectReference Include="UniFramework.Tween.csproj">
-      <Project>{d85a38b9-4fe6-2c30-eae5-a9ded13ab53e}</Project>
-      <Name>UniFramework.Tween</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniFramework.Animation.csproj">
-      <Project>{7f86d8d0-1c53-c523-978d-1a00e4ae7fd9}</Project>
-      <Name>UniFramework.Animation</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniFramework.Pooling.csproj">
-      <Project>{bc9e3257-ad6e-0aac-2049-913cd7dd3733}</Project>
-      <Name>UniFramework.Pooling</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniFramework.Window.csproj">
-      <Project>{8cb52a09-cedd-eb41-17ff-6c4df9159dd6}</Project>
-      <Name>UniFramework.Window</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniFramework.Utility.csproj">
-      <Project>{432d0d4b-9ffb-6bc9-e3f6-ae49227a054e}</Project>
-      <Name>UniFramework.Utility</Name>
+    <ProjectReference Include="UniTask.YooAsset.csproj">
+      <Project>{92e6269b-6bda-8274-8399-0d2a512f3fa5}</Project>
+      <Name>UniTask.YooAsset</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

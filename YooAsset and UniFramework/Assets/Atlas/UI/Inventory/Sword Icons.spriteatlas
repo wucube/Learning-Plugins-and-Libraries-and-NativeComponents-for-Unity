@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Assets/Atlas/UI/Inventory/Sword Icons.spriteatlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 12
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 93ceb856fe9f42c4d8f5143b00968b03, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ab39de21fc27eaa4eb5a0f16fcaa97d3, type: 3}
+  - {fileID: 21300000, guid: d6e34331b60e0e94fa05dda4a27260cc, type: 3}
+  - {fileID: 21300000, guid: 564e70e170264bf4fb98d03f94970eaa, type: 3}
+  - {fileID: 21300000, guid: 3fc5bbf1f9efe06488d4c851aa16f2b8, type: 3}
+  - {fileID: 21300000, guid: ae1b9ee8876289e4594de7dd4a92d9a1, type: 3}
+  - {fileID: 21300000, guid: 2ca6060c934cb234fb31ebfcfb9c4349, type: 3}
+  - {fileID: 21300000, guid: e6be714db2984be4ab74dd3e3da42278, type: 3}
+  - {fileID: 21300000, guid: 5ec212bed0be9ac419bbc004a3254bb5, type: 3}
+  - {fileID: 21300000, guid: 6b38cace57bf8cc4895bb0973e899941, type: 3}
+  - {fileID: 21300000, guid: 045d8fde8ecf4dc4a81d1523e80ee0b9, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SWORD 9
+  - SWORD 5
+  - SWORD 6
+  - SWORD 7
+  - SWORD 2
+  - SWORD 10
+  - SWORD 4
+  - SWORD 8
+  - SWORD 3
+  - SWORD 1
+  m_RenderDataMap: {}
+  m_Tag: Assets/Atlas/UI/Inventory/Sword Icons.spriteatlas
+  m_IsVariant: 0

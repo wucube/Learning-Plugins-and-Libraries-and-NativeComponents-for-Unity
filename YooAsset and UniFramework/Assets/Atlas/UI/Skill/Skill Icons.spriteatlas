@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Skill Icons
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 25
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: b4f50f3cacf2ca7419f10c9e83ee0341, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 593f5070cf5a856418e0eab7ee1c5eb4, type: 3}
+  - {fileID: 21300000, guid: 9014db62f2abd7348ba6b01c3211ef67, type: 3}
+  - {fileID: 21300000, guid: 2d040072b330f804c8e5fa8e79918f33, type: 3}
+  - {fileID: 21300000, guid: 92e2ccf2cbdee5a4cade0f4149b7af34, type: 3}
+  - {fileID: 21300000, guid: 0f9301f307ed37b40bf7b42fde7d6363, type: 3}
+  - {fileID: 21300000, guid: cf3d71a52b924a14fb5bbb9e0fb52fa0, type: 3}
+  - {fileID: 21300000, guid: 954512e5f810ee241bb1b8304d5cfcb5, type: 3}
+  - {fileID: 21300000, guid: 143f2ab6d1fdb1b42ad5db35c4015993, type: 3}
+  - {fileID: 21300000, guid: 397911f75762df64c92963a1964fa1d7, type: 3}
+  - {fileID: 21300000, guid: 6b56f66853b95784a9ce52327d18853f, type: 3}
+  - {fileID: 21300000, guid: bda7839814b91f04988092e6c7f9ee71, type: 3}
+  - {fileID: 21300000, guid: 049388499f25f5c49803463e04e39382, type: 3}
+  - {fileID: 21300000, guid: 661ba71ab26b12545a486319a0aa0706, type: 3}
+  - {fileID: 21300000, guid: bfe34f6aee3f3e64592f3c613c5a05ce, type: 3}
+  - {fileID: 21300000, guid: c9243d5b58b467645b7d3ea46795c693, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Element_C_Air2
+  - Element_B_Lightning1
+  - Element_E_Earth1
+  - Element_D_Cloud3
+  - Element_D_Cloud1
+  - Element_C_Air1
+  - Element_A_Fire1
+  - Element_B_Lightning2
+  - Element_A_Fire3
+  - Element_C_Air3
+  - Element_A_Fire2
+  - Element_E_Earth2
+  - Element_E_Earth3
+  - Element_D_Cloud2
+  - Element_B_Lightning3
+  m_RenderDataMap: {}
+  m_Tag: Skill Icons
+  m_IsVariant: 0
