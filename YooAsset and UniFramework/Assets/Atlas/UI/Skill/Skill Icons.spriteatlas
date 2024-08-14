@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skill Icons
+  m_Name: Assets/Atlas/UI/Skill/Skill Icons.spriteatlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -82,5 +82,5 @@ SpriteAtlas:
   - Element_D_Cloud2
   - Element_B_Lightning3
   m_RenderDataMap: {}
-  m_Tag: Skill Icons
+  m_Tag: Assets/Atlas/UI/Skill/Skill Icons.spriteatlas
   m_IsVariant: 0

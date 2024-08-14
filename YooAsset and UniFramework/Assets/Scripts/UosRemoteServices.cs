@@ -17,7 +17,7 @@ public class UosRemoteServices : IRemoteServices
     public string GetRemoteMainURL(string fileName)
     {
         
-        string filePath = Path.Combine(_defaultHostServer,fileName);
+        string filePath =Path.Combine(_defaultHostServer,fileName);
         
         Debug.Log($"请求下载文件的URL：{filePath}");
         return filePath;
@@ -25,7 +25,7 @@ public class UosRemoteServices : IRemoteServices
 
     public string GetRemoteFallbackURL(string fileName)
     {
-        string filePath = Path.Combine(_defaultHostServer,fileName);
+        string filePath = Path.Combine(_fallbackHostServer,fileName);
         
         Debug.Log($"请求下载文件的URL：{filePath}");
         return filePath;

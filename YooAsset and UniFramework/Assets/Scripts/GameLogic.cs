@@ -8,33 +8,32 @@ public class GameLogic:MonoBehaviour
 {
     [SerializeField] private Transform _skillCenter;
     [SerializeField] private Transform _avatarCenter;
-
+    
     private  YooAssetManager _assetManager;
     
     async UniTaskVoid Awake()
     {
         _assetManager = new YooAssetManager("TestPackage");
         
-        await _assetManager.InitPackageAsync_WechatMinigame("73b1f15d-1638-4896-820c-922686a3fb60","v1.1");
+        //await  _assetManager.InitPackageAsync_HostPlay("73b1f15d-1638-4896-820c-922686a3fb60","v1.1"); 
+
+        await _assetManager.InitPackageAsync_WechatMinigame("73b1f15d-1638-4896-820c-922686a3fb60","v1.1");  
+
         string packageVersion = await _assetManager.RequestPackageVersionAsync();
         await _assetManager.UpdatePackageManifestAsync(packageVersion);
-        //_assetManager.CheckLocalManifestIntegrity();
-
-        var isSuccessful = await _assetManager.DownloadAsync();
         
+        var isSuccessful = await _assetManager.DownloadAsync();
         
         await LoadUIPrefab("Assets/Prefabs/ELF-LADY",_avatarCenter);
         await LoadUIPrefab("Assets/Prefabs/ELF-PRINCE",_avatarCenter);
         await LoadUIPrefab("Assets/Prefabs/ELF-WARRIOR",_avatarCenter);
-
-
+        
         Sprite[] sprites = await LoadAllSpritesFromAtlasAsync("Assets/Atlas/UI/Skill/Skill Icons");
         
         for (int i = 0; i < sprites.Length; i++)
         {
             await LoadIconsFromAtlas(sprites, "Assets/Prefabs/Skill_Icon_Image", i, _skillCenter);
         }
-        
     }
 
     void Start()

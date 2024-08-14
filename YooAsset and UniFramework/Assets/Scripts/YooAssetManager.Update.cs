@@ -1,4 +1,5 @@
-﻿using System;using Cysharp.Threading.Tasks;
+﻿using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using YooAsset;
 
@@ -73,22 +74,22 @@ public partial class YooAssetManager
  
 #if UNITY_EDITOR
         if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.Android)
-            return $"{hostServerIP}UOS CDN/Android/{buildVersion}";
+            return $"{hostServerIP}UOS_CDN/Android/{buildVersion}";
         else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.iOS)
-            return $"{hostServerIP}UOS CDN/IPhone/{buildVersion}";
+            return $"{hostServerIP}UOS_CDN/IPhone/{buildVersion}";
         else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.WebGL)
-            return $"{hostServerIP}UOS CDN/WebGL/{buildVersion}";
+            return $"{hostServerIP}UOS_CDN/WebGL/{buildVersion}";
         else
-            return $"{hostServerIP}UOS CDN/PC/{buildVersion}";
+            return $"{hostServerIP}UOS_CDN/PC/{buildVersion}";
 #else
     if (Application.platform == RuntimePlatform.Android)
-        return $"{hostServerIP}UOS CDN/Android/{buildVersion}";
+        return $"{hostServerIP}UOS_CDN/Android/{buildVersion}";
     else if (Application.platform == RuntimePlatform.IPhonePlayer)
-        return $"{hostServerIP}UOS CDN/IPhone/{buildVersion}";
+        return $"{hostServerIP}UOS_CDN/IPhone/{buildVersion}";
     else if (Application.platform == RuntimePlatform.WebGLPlayer)
         return $"{hostServerIP}UOS_CDN/WebGL/{buildVersion}";
     else
-        return $"{hostServerIP}UOS CDN/PC/{buildVersion}";
+        return $"{hostServerIP}UOS_CDN/PC/{buildVersion}";
 #endif
     }
 }

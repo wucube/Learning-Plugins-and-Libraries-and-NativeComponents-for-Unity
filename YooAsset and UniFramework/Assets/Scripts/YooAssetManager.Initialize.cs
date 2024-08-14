@@ -79,7 +79,7 @@ public partial class YooAssetManager
     /// <remarks> 微信小游戏，抖音小游戏都需要选择该模式。</remarks>
     public async UniTask InitPackageAsync_WebPlay()
     {
-        var webFileSystem = FileSystemParameters.CreateDefaultWebFileSystemParameters();
+        var webFileSystem = FileSystemParameters.CreateDefaultWebFileSystemParameters(false);
         var initParameters = new WebPlayModeParameters
         {
             WebFileSystemParameters = webFileSystem
@@ -95,24 +95,21 @@ public partial class YooAssetManager
     
     public async UniTask InitPackageAsync_WechatMinigame(string bucketId,string buildPackageVersion)
     {
-        string defaultHostServer = GetHostServerURL(bucketId,buildPackageVersion,RemoteMode.WechatMinigame);
-        string fallbackHostServer = GetHostServerURL(bucketId,buildPackageVersion,RemoteMode.WechatMinigame);
-        IRemoteServices remoteServices = new UosRemoteServices(defaultHostServer,fallbackHostServer);
-        
-        var weChatFileSystem = WechatFileSystemCreater.CreateWechatFileSystemParameters(remoteServices);
-        var initParameters = new WebPlayModeParameters
-        {
-            WebFileSystemParameters = weChatFileSystem
-        };
-        
-        var initOperation = _package.InitializeAsync(initParameters);
-        await initOperation.ToUniTask();
-        if(initOperation.Status == EOperationStatus.Succeed)
-            Debug.Log("资源包初始化成功！");
-        else 
-            Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+        // string defaultHostServer = GetHostServerURL(bucketId,buildPackageVersion,RemoteMode.WechatMinigame);
+        // string fallbackHostServer = GetHostServerURL(bucketId,buildPackageVersion,RemoteMode.WechatMinigame);
+        // IRemoteServices remoteServices = new UosRemoteServices(defaultHostServer,fallbackHostServer);
+        //
+        // var weChatFileSystem = WechatFileSystemCreater.CreateWechatFileSystemParameters(remoteServices);
+        // var initParameters = new WebPlayModeParameters
+        // {
+        //     WebFileSystemParameters = weChatFileSystem
+        // };
+        //
+        // var initOperation = _package.InitializeAsync(initParameters);
+        // await initOperation.ToUniTask();
+        // if(initOperation.Status == EOperationStatus.Succeed)
+        //     Debug.Log("资源包初始化成功！");
+        // else 
+        //     Debug.LogError($"资源包初始化失败：{initOperation.Error}");
     }
-    
-    
-    
 }
