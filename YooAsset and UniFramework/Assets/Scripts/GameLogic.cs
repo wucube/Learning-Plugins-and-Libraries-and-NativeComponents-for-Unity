@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.UI;
+using YooAsset;
 
 public class GameLogic:MonoBehaviour
 {
@@ -14,11 +15,14 @@ public class GameLogic:MonoBehaviour
     {
         _assetManager = new YooAssetManager("TestPackage");
         
-        await _assetManager.InitPackageAsync_OfflinePlay();
+        await _assetManager.InitPackageAsync_WechatMinigame("73b1f15d-1638-4896-820c-922686a3fb60","v1.1");
         string packageVersion = await _assetManager.RequestPackageVersionAsync();
         await _assetManager.UpdatePackageManifestAsync(packageVersion);
-        _assetManager.CheckLocalManifestIntegrity();
+        //_assetManager.CheckLocalManifestIntegrity();
 
+        var isSuccessful = await _assetManager.DownloadAsync();
+        
+        
         await LoadUIPrefab("Assets/Prefabs/ELF-LADY",_avatarCenter);
         await LoadUIPrefab("Assets/Prefabs/ELF-PRINCE",_avatarCenter);
         await LoadUIPrefab("Assets/Prefabs/ELF-WARRIOR",_avatarCenter);

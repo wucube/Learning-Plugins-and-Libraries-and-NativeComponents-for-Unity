@@ -4,43 +4,48 @@ using YooAsset;
 
 public partial class YooAssetManager
 {
-    // public async UniTask DownloadFromRemote(string packageName)
-    // {
-    //     int downloadingMaxNum = 10;
-    //     int failedTryAgain = 3;
-    //     var package = YooAssets.GetPackage(packageName);
-    //     var downloader = package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
-    //
-    //     //没有需要下载的资源
-    //     if (downloader.TotalDownloadCount == 0)
-    //     {        
-    //         yield break;
-    //     }
-    //
-    //     //需要下载的文件总数和总大小
-    //     int totalDownloadCount = downloader.TotalDownloadCount;
-    //     long totalDownloadBytes = downloader.TotalDownloadBytes;    
-    //
-    //     //注册回调方法
-    //     downloader.OnDownloadErrorCallback = OnDownloadErrorFunction;
-    //     downloader.OnDownloadProgressCallback = OnDownloadProgressUpdateFunction;
-    //     downloader.OnDownloadOverCallback = OnDownloadOverFunction;
-    //     downloader.OnStartDownloadFileCallback = OnStartDownloadFileFunction;
-    //
-    //     //开启下载
-    //     downloader.BeginDownload();
-    //     yield return downloader;
-    //
-    //     //检测下载结果
-    //     if (downloader.Status == EOperationStatus.Succeed)
-    //     {
-    //         //下载成功
-    //     }
-    //     else
-    //     {
-    //         //下载失败
-    //     }
-    // }
+    public async UniTask<bool> DownloadAsync()
+    {
+        int downloadingMaxNum = 10;
+        int failedTryAgain = 3;
+        var downloader = _package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
+    
+        //没有需要下载的资源
+        if (downloader.TotalDownloadCount == 0)
+        {
+            Debug.Log("没有需要下载的资源");
+            return true;
+        }
+    
+        //需要下载的文件总数和总大小
+        int totalDownloadCount = downloader.TotalDownloadCount;
+        long totalDownloadBytes = downloader.TotalDownloadBytes;    
+    
+        //注册回调方法
+        // downloader.OnDownloadErrorCallback = OnDownloadErrorFunction;
+        // downloader.OnDownloadProgressCallback = OnDownloadProgressUpdateFunction;
+        // downloader.OnDownloadOverCallback = OnDownloadOverFunction;
+        // downloader.OnStartDownloadFileCallback = OnStartDownloadFileFunction;
+    
+        //开启下载
+        downloader.BeginDownload();
+        await downloader.ToUniTask();
+    
+        //检测下载结果
+        if (downloader.Status == EOperationStatus.Succeed)
+        {
+            //下载成功
+            Debug.Log("资源下载成功");
+            return true;
+        }
+        else
+        {
+            //下载失败
+            Debug.Log("下载失败");
+            return false;
+        }
+    }
+    
 
     /// <summary>
     /// 检查本地资源清单的完整性

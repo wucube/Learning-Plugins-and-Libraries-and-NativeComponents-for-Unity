@@ -1,6 +1,13 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System;using Cysharp.Threading.Tasks;
 using UnityEngine;
 using YooAsset;
+
+
+public enum RemoteMode{
+    HostServer,
+    WechatMinigame
+}
+
 
 public partial class YooAssetManager
 {
@@ -49,11 +56,19 @@ public partial class YooAssetManager
             Debug.LogError(operation.Error);
         }
     }
-
-    private string GetHostServerURL(string buildPackageVersion = "v1.0")
+    
+    private string GetHostServerURL(string bucketId,string buildPackageVersion,RemoteMode remoteMode)
     {
-        //string hostServerIP = "http://10.0.2.2"; //安卓模拟器地址
-        string hostServerIP = "https://a.unity.cn/client_api/v1/buckets/73b1f15d-1638-4896-820c-922686a3fb60/entry_by_path/content/?path=";
+        string hostServerIP = string.Empty;
+        
+        if (remoteMode == RemoteMode.HostServer)
+        {
+            hostServerIP = $"https://a.unity.cn/client_api/v1/buckets/{bucketId}/entry_by_path/content/?path=";
+        }
+        else if(remoteMode == RemoteMode.WechatMinigame)
+        {
+            hostServerIP = $"https://a.unity.cn/client_api/v1/buckets/{bucketId}/content/";
+        }
         string buildVersion = buildPackageVersion;
  
 #if UNITY_EDITOR
@@ -71,7 +86,7 @@ public partial class YooAssetManager
     else if (Application.platform == RuntimePlatform.IPhonePlayer)
         return $"{hostServerIP}UOS CDN/IPhone/{buildVersion}";
     else if (Application.platform == RuntimePlatform.WebGLPlayer)
-        return $"{hostServerIP}UOS CDN/WebGL/{buildVersion}";
+        return $"{hostServerIP}UOS_CDN/WebGL/{buildVersion}";
     else
         return $"{hostServerIP}UOS CDN/PC/{buildVersion}";
 #endif

@@ -14,7 +14,8 @@
 [Bb]undles/ 
 
 # UOS CDN FilePath
-[Uu]OS CDN/
+[Uu]OS_CDN/
+[W]wechatMinigameBundles/
 
 # VisualStudio Build results
 [Dd]ebug/

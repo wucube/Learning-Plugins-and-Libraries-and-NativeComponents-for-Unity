@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask", "UniTask.csproj", "{533046c3-fc28-e7c2-9747-c6257be41233}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.YooAsset", "UniTask.YooAsset.csproj", "{92e6269b-6bda-8274-8399-0d2a512f3fa5}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.Linq", "UniTask.Linq.csproj", "{f48579ba-ef1b-c3ad-2f9b-d24a8fb0a522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YooAsset.RuntimeExtension", "YooAsset.RuntimeExtension.csproj", "{1515f36c-eb33-fa31-9053-f91824cd0e37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wx", "Wx.csproj", "{b9b6d0d0-c6dd-a30d-c2d2-7849701a768b}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.DOTween", "UniTask.DOTween.csproj", "{ef91f8cb-fed5-fe5b-f1f6-5b04b22c1ab5}"
 EndProject
@@ -11,9 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.TextMeshPro", "UniTask.TextMeshPro.csproj", "{305ecb63-5dfa-4caa-86a5-29e37582ea89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.YooAsset", "UniTask.YooAsset.csproj", "{92e6269b-6bda-8274-8399-0d2a512f3fa5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.Addressables", "UniTask.Addressables.csproj", "{371af24c-db41-c677-3bea-9df9da1260c7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxEditor", "WxEditor.csproj", "{64602a42-672b-538d-5006-39fd80843c09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{23a2627d-d04a-bc2f-9036-aa0a369a1078}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.Editor", "UniTask.Editor.csproj", "{e3a66d5d-6b39-22cd-dc9a-0080d7997202}"
 EndProject
@@ -26,18 +34,26 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{533046c3-fc28-e7c2-9747-c6257be41233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{533046c3-fc28-e7c2-9747-c6257be41233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92e6269b-6bda-8274-8399-0d2a512f3fa5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92e6269b-6bda-8274-8399-0d2a512f3fa5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f48579ba-ef1b-c3ad-2f9b-d24a8fb0a522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f48579ba-ef1b-c3ad-2f9b-d24a8fb0a522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1515f36c-eb33-fa31-9053-f91824cd0e37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1515f36c-eb33-fa31-9053-f91824cd0e37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b9b6d0d0-c6dd-a30d-c2d2-7849701a768b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b9b6d0d0-c6dd-a30d-c2d2-7849701a768b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ef91f8cb-fed5-fe5b-f1f6-5b04b22c1ab5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ef91f8cb-fed5-fe5b-f1f6-5b04b22c1ab5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{038f01cd-352d-7606-6641-b38f514ce29f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{038f01cd-352d-7606-6641-b38f514ce29f}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{305ecb63-5dfa-4caa-86a5-29e37582ea89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{305ecb63-5dfa-4caa-86a5-29e37582ea89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92e6269b-6bda-8274-8399-0d2a512f3fa5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92e6269b-6bda-8274-8399-0d2a512f3fa5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{371af24c-db41-c677-3bea-9df9da1260c7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{371af24c-db41-c677-3bea-9df9da1260c7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64602a42-672b-538d-5006-39fd80843c09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64602a42-672b-538d-5006-39fd80843c09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23a2627d-d04a-bc2f-9036-aa0a369a1078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23a2627d-d04a-bc2f-9036-aa0a369a1078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e3a66d5d-6b39-22cd-dc9a-0080d7997202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e3a66d5d-6b39-22cd-dc9a-0080d7997202}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3e0cd3c4-7963-a2cb-944b-381d6c393512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

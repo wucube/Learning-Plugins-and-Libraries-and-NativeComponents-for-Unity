@@ -50,10 +50,10 @@ public partial class YooAssetManager
     /// </summary>
     /// <param name="packageName"></param>
     /// <remarks>适合需要热更新资源的游戏，该模式需要构建资源包</remarks>
-    public async UniTask InitPackageAsync_HostPlay()
+    public async UniTask InitPackageAsync_HostPlay(string bucketId,string buildPackageVersion)
     {
-        string defaultHostServer = "http://127.0.0.1/CDN/Android/v1.0";
-        string fallbackHostServer = "http://127.0.0.1/CDN/Android/v1.0";
+        string defaultHostServer = GetHostServerURL(bucketId,buildPackageVersion,RemoteMode.HostServer);
+        string fallbackHostServer = GetHostServerURL(bucketId,buildPackageVersion,RemoteMode.HostServer);
         IRemoteServices remoteServices = new UosRemoteServices(defaultHostServer, fallbackHostServer);
         var cacheFileSystem = FileSystemParameters.CreateDefaultCacheFileSystemParameters(remoteServices);
         var buildinFileSystem = FileSystemParameters.CreateDefaultBuildinFileSystemParameters();   
@@ -92,4 +92,27 @@ public partial class YooAssetManager
         else 
             Debug.LogError($"资源包初始化失败：{initOperation.Error}");
     }
+    
+    public async UniTask InitPackageAsync_WechatMinigame(string bucketId,string buildPackageVersion)
+    {
+        string defaultHostServer = GetHostServerURL(bucketId,buildPackageVersion,RemoteMode.WechatMinigame);
+        string fallbackHostServer = GetHostServerURL(bucketId,buildPackageVersion,RemoteMode.WechatMinigame);
+        IRemoteServices remoteServices = new UosRemoteServices(defaultHostServer,fallbackHostServer);
+        
+        var weChatFileSystem = WechatFileSystemCreater.CreateWechatFileSystemParameters(remoteServices);
+        var initParameters = new WebPlayModeParameters
+        {
+            WebFileSystemParameters = weChatFileSystem
+        };
+        
+        var initOperation = _package.InitializeAsync(initParameters);
+        await initOperation.ToUniTask();
+        if(initOperation.Status == EOperationStatus.Succeed)
+            Debug.Log("资源包初始化成功！");
+        else 
+            Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+    }
+    
+    
+    
 }
