@@ -19,6 +19,4 @@
 
 
 #### 运行环境
-- Unity Editor：2021.3.30f1c1
-- JetBrains Rider：2023.3.3
-- Visual Studio 2022：17.8 
+- Unity Editor：2021.3.30f1c1（部分已经升级到 2021.3.40f）
