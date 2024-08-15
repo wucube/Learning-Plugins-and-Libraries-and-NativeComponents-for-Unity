@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\YooAssetManager.Update.cs" />
     <Compile Include="Assets\Scripts\GameLogic.cs" />
-    <Compile Include="Assets\Scripts\UosRemoteServices.cs" />
+    <Compile Include="Assets\Scripts\RemoteServices.cs" />
     <Compile Include="Assets\Scripts\YooAssetManager.CreateAndDestory.cs" />
     <Compile Include="Assets\Scripts\YooAssetManager.Download.cs" />
     <Compile Include="Assets\Scripts\YooAssetManager.Initialize.cs" />
@@ -754,13 +754,13 @@
       <Project>{371af24c-db41-c677-3bea-9df9da1260c7}</Project>
       <Name>UniTask.Addressables</Name>
     </ProjectReference>
-    <ProjectReference Include="YooAsset.RuntimeExtension.csproj">
-      <Project>{1515f36c-eb33-fa31-9053-f91824cd0e37}</Project>
-      <Name>YooAsset.RuntimeExtension</Name>
-    </ProjectReference>
     <ProjectReference Include="UniTask.Linq.csproj">
       <Project>{f48579ba-ef1b-c3ad-2f9b-d24a8fb0a522}</Project>
       <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="YooAsset.RuntimeExtension.csproj">
+      <Project>{1515f36c-eb33-fa31-9053-f91824cd0e37}</Project>
+      <Name>YooAsset.RuntimeExtension</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

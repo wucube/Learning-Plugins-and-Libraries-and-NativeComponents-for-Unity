@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.UI;
-using YooAsset;
 
 public class GameLogic:MonoBehaviour
 {
@@ -14,11 +13,12 @@ public class GameLogic:MonoBehaviour
     async UniTaskVoid Awake()
     {
         _assetManager = new YooAssetManager("TestPackage");
-        
-        //await  _assetManager.InitPackageAsync_HostPlay("73b1f15d-1638-4896-820c-922686a3fb60","v1.1"); 
-
+#if UNITY_EDITOR
+        await _assetManager.InitPackageAsync_HostPlay("73b1f15d-1638-4896-820c-922686a3fb60","v1.1"); 
+#elif UNITY_WEBGL && WEIXINMINIGAME
         await _assetManager.InitPackageAsync_WechatMinigame("73b1f15d-1638-4896-820c-922686a3fb60","v1.1");  
-
+#endif
+        
         string packageVersion = await _assetManager.RequestPackageVersionAsync();
         await _assetManager.UpdatePackageManifestAsync(packageVersion);
         

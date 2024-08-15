@@ -41,15 +41,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollector.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectionHelper.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectionManifest.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\PackageComparator\PackageComparatorWindow.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\CustomPackRule.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\PackageImporter\PackageImporterWindow.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectorSetting.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectorWindow.cs" />
-    <None Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectorWindow.uxml" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollector.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectionHelper.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectionManifest.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\PackageComparator\PackageComparatorWindow.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\CustomPackRule.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\PackageImporter\PackageImporterWindow.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectorSetting.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectorWindow.cs" />
+    <None Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Editor\ShaderVariantCollector\ShaderVariantCollectorWindow.uxml" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity Editor\2021.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -795,13 +795,13 @@
       <Project>{371af24c-db41-c677-3bea-9df9da1260c7}</Project>
       <Name>UniTask.Addressables</Name>
     </ProjectReference>
-    <ProjectReference Include="YooAsset.RuntimeExtension.csproj">
-      <Project>{1515f36c-eb33-fa31-9053-f91824cd0e37}</Project>
-      <Name>YooAsset.RuntimeExtension</Name>
-    </ProjectReference>
     <ProjectReference Include="UniTask.Linq.csproj">
       <Project>{f48579ba-ef1b-c3ad-2f9b-d24a8fb0a522}</Project>
       <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="YooAsset.RuntimeExtension.csproj">
+      <Project>{1515f36c-eb33-fa31-9053-f91824cd0e37}</Project>
+      <Name>YooAsset.RuntimeExtension</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

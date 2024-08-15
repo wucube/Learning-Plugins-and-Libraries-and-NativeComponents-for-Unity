@@ -41,19 +41,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSRequestPackageVersionOperation.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\Operation\internal\RequestWechatPackageHashOperation.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\AssetOperationHandleExtension.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSLoadBundleOperation.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSInitializeOperation.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\GameObjectAssetReference.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSDownloadFileOperation.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\Operation\internal\RequestWechatPackageVersionOperation.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\LoadAssetsByTagOperation.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSLoadPackageManifestOperation.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\WechatFileSystem.cs" />
-    <Compile Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\WechatFileSystem\Operation\internal\LoadWechatPackageManifestOperation.cs" />
-    <None Include="Assets\Samples\YooAsset\2.2.2-preview\Extension Sample\Runtime\YooAsset.RuntimeExtension.asmdef" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSRequestPackageVersionOperation.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\Operation\internal\RequestWechatPackageHashOperation.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\AssetOperationHandleExtension.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSLoadBundleOperation.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSInitializeOperation.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\GameObjectAssetReference.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSDownloadFileOperation.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\Operation\internal\RequestWechatPackageVersionOperation.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\LoadAssetsByTagOperation.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\Operation\WXFSLoadPackageManifestOperation.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\WechatFileSystem.cs" />
+    <Compile Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\WechatFileSystem\Operation\internal\LoadWechatPackageManifestOperation.cs" />
+    <None Include="Assets\Samples\YooAsset\2.2.4-preview\Extension Sample\Runtime\YooAsset.RuntimeExtension.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity Editor\2021.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
